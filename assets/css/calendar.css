@@ -63,9 +63,21 @@
 
 /* calendar item */
 .calendar .btn-list {
-	/* background-color: transparent; */
+	background-color: transparent !important;
 }
+.PinkColor {
+	background: #7963F0;
+border-radius: 10px;
+color: #fff;
+padding: 7px 17px !important;
 
+}
+.PinkColor:hover {
+	background: #7963F0;
+border-radius: 10px ;
+padding: 7px 17px !important;
+color: #fff;
+}
 /* table .first-col {
 	max-width: 12rem;
 } */
@@ -279,4 +291,12 @@ border-radius: 6px !important;
 	grid-template-columns: repeat(10, 1fr);
 	align-items: start;
 	gap: 0 1rem;
+}
+
+.btn-pagination {
+	margin-left: 5px;
+}
+
+.calenderSell {
+	margin-bottom: -320px !important;
 }

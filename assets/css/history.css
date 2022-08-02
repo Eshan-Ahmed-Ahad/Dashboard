@@ -806,35 +806,12 @@ a:hover {
 	width: 100%;
 	background-color: var(--color-white);
 	padding: 2.8rem;
-	border-radius: 16px 16px 0px 0px;
+	border-radius: 6px 6px 0px 0px;
 	box-shadow: 0px -6px 20px rgba(13, 10, 25, 0.1);
 	/* border-radius: 16px 16px 0px 0px; */
 	display: none;
 }
 
-.mblNav-list {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	list-style-type: none;
-}
-.mblNav-item {
-}
-.mblNav-link {
-	text-decoration: none;
-	background: #f5f6f7;
-	border-radius: 10px;
-	padding: 1.3rem;
-}
-.mblNav-link .icon {
-	height: 2.2rem;
-	width: 2.2rem;
-	fill: #9a9ea7;
-}
-
-.mblNav-link.active .icon {
-	fill: var(--color-primary);
-}
 /*--------------------------------------------------------------
 # notification slider button
 --------------------------------------------------------------*/
@@ -1798,6 +1775,7 @@ profile header image
 	border-top: 1px solid #cddfff;
 }
 
+
 .footer .copyright {
 	text-align: center;
 	color: #012970;
@@ -2231,13 +2209,11 @@ color: #9A9EA7;
 /* footer  area  */
 
 .FooterArea {
-	background-color: #f5f6f7;
-	padding: 10px 30px;
-	/* margin-left: -51px;
-	width: 1100px; */
-	width: 100% !important;
+    background-color: #f5f6f7;
+    padding: 10px 30px;
+    width: 110% !important;
+    margin-left: -30px;
 }
-
 .About {
 	font-family: 'Inter';
 	font-style: normal;
@@ -2305,4 +2281,69 @@ color: #9A9EA7;
 	.pagetitle {
 		display: none !important;
 	} 
+	.SmallImgHidden {
+		display: none;
+	}
+	.reviwes-btn {
+		margin-top: 1%;
+
+	}
+}
+
+
+/* sidebar footer area sell  start*/
+.sell-car-box {
+	padding: 2rem 2.8rem;
+	background: #f5f6f7;
+	/* border-radius: 10px; */
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left:2rem ;
+	margin-right: 2rem;
+	text-align: center;
+}
+.sell-car-box .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: #4154f1;
+}
+
+
+.btn-sell-car {
+	gap: 1rem;
+	font-size: 1.2rem;
+	background: #ffffff !important;
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+	padding: 1rem 0 !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.historySidebar {
+	margin-bottom: -980%;
+}
+
+/* sidebar footer area sell  end*/
+
+.InvestMoney {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 32px;
+letter-spacing: -0.0916667px;
+color: #0D0A19;
+}
+
+.InvestMoneyP{ 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #9A9EA7;
 }

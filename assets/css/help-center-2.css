@@ -178,3 +178,16 @@ body {
 	color: var(--color-white);
 	background-color: var(--color-secondary);
 }
+
+
+.MarginDown {
+	margin-bottom: -415px;
+}
+.helpFooter  { 
+
+		background-color: #f5f6f7;
+		padding: 10px 30px;
+		width: 100% !important;
+		
+	
+}

@@ -24,7 +24,8 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-  <link href="assets/css/search.css" rel="stylesheet">
+  <link href="assets/css/history.css" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -36,6 +37,7 @@
     <button class="btn-close-sidebar">
       <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
     </button>
+
     <ul class="sidebar-nav" id="sidebar-nav">
       <li class="nav-item">
          <img class="mb-3 ms-3" src="assets/img/logo.png" alt="">
@@ -52,7 +54,7 @@
       <li class="nav-heading">Auction</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" href="auction2.html">
           <i><img src="assets/img/2.png" alt=""></i><span>Auctions</span>
         </a>
      
@@ -60,7 +62,7 @@
       <!-- End Components Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed"  href="auction-calendar.html">
           <i><img src="assets/img/3.png" alt=""></i><span>Calender</span>
         </a>
       </li>
@@ -82,7 +84,7 @@
       <li class="nav-heading">Vehicle finder</li>
 
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="history.html">
           <i><img src="assets/img/search2.png" alt=""></i>
           <span>Search </span>
         </a>
@@ -103,12 +105,20 @@
       </li><!-- End Book Service Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="help-center-2.html">
           <i><img src="assets/img/10.png" alt=""></i>
           <span>Help Center</span>
         </a>
       </li><!-- End Register Page Nav -->
     </ul>
+
+    <div class="sell-car-box historySidebar ">
+      <p class="text">A new way to buy modern and sell old cars</p>
+      <a href="#" class="btn btn-sell-car d-flex ">
+        <svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
+        <span>sell your car</span>
+      </a>
+    </div>
 
   </aside><!-- End Sidebar-->
 
@@ -137,7 +147,7 @@
                 <div class="col-md-8 car-head">
                     <img src="assets/car-image/carhead1.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4 SmallImgHidden">
                     <div class="carheads1 mb-5">
                         <img src="assets/car-image/carhead2.png" class="img-fluid" alt="">
                     </div>
@@ -292,6 +302,7 @@
                         <h1 class="rating-style">4.96</h1>
                       </div>
                       <p style="color:#9A9EA7; ">Based on 235 reviews</p>
+
                       <button class="reviwes-btn"> <img src="assets/img/mess.png" alt="">  <span class="SomeLeft">all reviews</span></button>
                   </div>
                   <div class="col-md-8">
@@ -417,7 +428,6 @@
                     </div>
                   </div>      
                 </div> 
-                <hr class="hr-control">
          
         </div> 
 
@@ -543,33 +553,11 @@
   <div class="overlay"></div>
   <!-- mbl nav bar start -->
   <nav class="mblNav">
-    <ul class="mblNav-list">
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link active">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-1"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-2"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-3"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item sidebar-toggle-btn">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-4"></use></svg>
-        </a>
-      </li>
-    </ul>
+
+        <h3 class="InvestMoney">$35,700 — $37,700</h3>
+        <p class="InvestMoneyP">MSRP</p>
+        <button type="button" class="btn p-3 inventoryButton">View local inventory</button>
+ 
   </nav>
     <!-- mbl nav bar end -->
 
@@ -589,74 +577,6 @@
   <script src="assets/js/main.js"></script>
 
 
-<script>
-  
-  const data = {
-    labels: ['Jan 15', 'Jan 16', 'Jan 17', 'Jan 18', 'Jan 19', 'Jan 20', 'Jan 21'],
-    datasets: [{
-      data: [ 12, 6, 9, 12, 3, 9,2],
-      backgroundColor: [
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-      
-      ],
-
-      borderRadius:2,
-      borderSkipped:false,
-      barPercentage: 0.50, 
-      categoryPercentage:0.5 
-    }]
-  };
-
-  // config 
-  const config = {
-    type: 'bar',
-    data,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true, 
-          grid:{
-            borderColor:"green", 
-            borderWidth:"3",
-            drawBorder: false ,
-           drawOnChartArea:false
-
-            
-          }
-        },
-        x: {
-          grid:{
-            drawBorder: false ,
-            display:true,
-           lineWidth: 5, 
-           drawOnChartArea:false
-        }
-      }
-    },    
-    plugins: {
-      tooltip:{
-        yAlign: "bottom"
-      },
-    legend:{
-      display:false
-    }}, 
-  }
-  
-  }
-  // render init block
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script>
 
 </body>
 
