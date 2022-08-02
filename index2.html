@@ -190,9 +190,9 @@
           <!-- car list  1-->
       <div class="mb-5 ">
         <div class="CarList row   ">
-          <div class="car-container d-flex ">
+          <div class="car-container">
             <div class="carImage col-md-4 ">
-              <img src="assets/car-image/car.png" class="img-fluid" alt="">
+              <img src="assets/img/car2.png" class="img-fluid" alt="">
             </div>
             
               <div class="carDetails col-md-8 ">
@@ -230,7 +230,7 @@
       <!-- car list 2 -->
       <div class="mb-5 ">
         <div class="CarList row   ">
-          <div class="carImage col-md-4 ">
+          <div class="carImage col-md-4">
             <img src="assets/car-image/car2.png" class="img-fluid" alt="">
           </div>
           <div class="carDetails col-md-8">
@@ -505,7 +505,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                  <h3>Interior</h3>
+                  <h3 class="filterBy">Interior</h3>
                 </button>
               </h2>
               <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
@@ -515,7 +515,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                  <h3>Color</h3>
+                  <h3 class="filterBy">Color</h3>
                 </button>
               </h2>
               <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
@@ -525,17 +525,25 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                  <h3>Price</h3>
+                  <h3 class="filterBy">Price</h3>
                 </button>
               </h2>
-              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              <div id="flush-collapseTen" class="accordion-collapse collapse show" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body ">
+                  <div class="PriceImg">
+                    <img src="assets/img/price.PNG" alt="">
+                  </div>
+
+                  <div class="PriceMoney">
+                    <p><span class="StartPrice">$15.700</span> <span class="EndPrice">$38.990</span> </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingEleven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                  <h3>Features</h3>
+                  <h3 class="filterBy">Features</h3>
                 </button>
               </h2>
               <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">

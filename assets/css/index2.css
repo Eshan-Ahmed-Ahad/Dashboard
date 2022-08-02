@@ -1861,7 +1861,7 @@ profile header image
 	align-items: center;
 }
 .historySidebar {
-	margin-bottom: -410%;
+	margin-bottom: -440%;
 }
 
 /* sidebar footer area sell  end*/
@@ -2157,4 +2157,55 @@ line-height: 21px;
 letter-spacing: -0.1px;
 color: #9A9EA7;
 
+}
+.PriceImg img {
+    width: 95%;
+    height: 130px;
+}
+.StartPrice {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+margin-right: 60%;
+text-align: center;
+letter-spacing: -0.1px;
+color: #0D0A19;
+}
+.EndPrice {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: -0.1px;
+	color: #0D0A19;
+}
+.car-container {
+	display: flex;
+}
+@media all and (max-width:767px){
+	.car-container {
+		display: block;
+		padding: 15px;
+	}
+	.CarList {
+		padding: 15px !important;
+	}
+	.carImage img {
+		width: 100%;
+		height: auto;
+	}
+	.conform {
+		margin-left: 160px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: -0.1px;
+		color: #7963F0;
+	}
 }
