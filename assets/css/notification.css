@@ -13,6 +13,7 @@
 	--color-secondary: #717ff5;
 }
 
+
 html {
 	font-size: 62.5%;
 }
@@ -42,13 +43,14 @@ a:hover {
 }
 
 .dashBoard {
-	color: #0d0a19;
-	margin-left: 15px;
+  margin-left: 15px;
+  color: #9a9ea7;
 }
 #main {
 	transition: all 0.3s;
 	padding: 20px 30px;
 	grid-column: 2/-1;
+	border-left: 1px solid #EEEEEE;
 }
 
 /* footer {
@@ -623,23 +625,15 @@ a:hover {
 	background-color: #f6f9ff;
 }
 
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
+
 .sidebar {
-	/* top: 60px;
-	left: 0;
-	bottom: 0; */
 	max-width: 25rem;
 	width: 100%;
-	/* position: absolute; */
 	grid-column: 1/2;
 	z-index: 996;
 	transition: all 0.3s;
 	padding: 15px;
 	min-height: 100vh;
-	/* min-height: 1450px; */
-	border-right: 1px solid #eeeeee !important;
 	background-color: var(--color-white);
 }
 
@@ -682,9 +676,7 @@ a:hover {
 	align-items: center;
 	font-size: 15px;
 	font-weight: 600;
-	color: #4154f1;
 	transition: 0.3;
-	background: #f5f6f7;
 	padding: 10px 15px;
 	border-radius: 4px;
 }
@@ -838,11 +830,11 @@ a:hover {
 # notification slider button
 --------------------------------------------------------------*/
 .switch {
-	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 34px;
-  }
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+}
   
   .switch input { 
 	opacity: 0;
@@ -863,17 +855,16 @@ a:hover {
   }
   
   .slider:before {
-	position: absolute;
-	content: "";
-	height: 26px;
-	width: 26px;
-	left: 4px;
-	bottom: 4px;
-	background-color: white;
-	-webkit-transition: .4s;
-	transition: .4s;
-  }
-  
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
   input:checked + .slider {
 	background-color: rgba(38, 38, 238, 0.637);
   }
@@ -900,7 +891,7 @@ a:hover {
 	background: #ffffff;
 	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
 	border-radius: 6px;
-	padding: 0px 10px;
+    padding: 10px 15px;
 	border: 1px solid #EEEEEE;
 	margin-right: 22px;
 }
@@ -1173,3 +1164,184 @@ a:hover {
 	margin-top: 10px;
 }
 
+
+.sell-car-box {
+	padding: 2rem 2.8rem;
+	background: #f5f6f7;
+	/* border-radius: 10px; */
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left:2rem ;
+	margin-right: 2rem;
+	text-align: center;
+}
+
+
+
+/* sidebar footer area sell  start*/
+.sell-car-box {
+	padding: 2rem 2.8rem;
+	background: #f5f6f7;
+	/* border-radius: 10px; */
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left:2rem ;
+	margin-right: 2rem;
+	text-align: center;
+}
+.sell-car-box .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: #4154f1;
+}
+
+
+.btn-sell-car {
+	gap: 1rem;
+	font-size: 1.2rem;
+	background: #ffffff !important;
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+	padding: 1rem 0 !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.historySidebar {
+	margin-bottom: -55%;
+}
+
+/* sidebar footer area sell  end*/
+
+.profileSetting {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+/* identical to box height, or 129% */
+
+letter-spacing: -0.1px;
+
+/* #0D0A19 / Primary */
+
+color: #0D0A19;
+}
+.email {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #FFFFFF;
+}
+.notifi {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height, or 135% */
+
+
+color: #FFFFFF;
+}
+.product{ 
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+margin-top: 15px;
+letter-spacing: -0.1px;
+
+/* Greys / #9A9EA7 */
+
+color: #9A9EA7;
+}
+.MessageRe {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #0D0A19;
+
+}
+.MessageReColor {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+
+letter-spacing: -0.1px;
+
+/* Greys / #9A9EA7 */
+
+color: #9A9EA7;
+}
+.updatingSetting {
+	background: #7963F0;
+border-radius: 10px;
+color: #fff;
+padding: 10px 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+letter-spacing: -0.1px;
+color: #FFFFFF;
+}
+.cancelBTN {
+	padding: 10px 15px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: -0.1px;
+	color: #9A9EA7;
+	background: #F5F6F7;
+border-radius: 10px;
+	
+}
+.Alerts {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #0D0A19;
+
+}
+.AlertMessage {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #9A9EA7;
+}
+
+@media all and (max-width:767px) {
+	.switch {
+		margin-left: 170px;
+		
+	}
+	.pagetitle {
+		display: none !important;
+	}
+}
