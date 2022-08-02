@@ -5,12 +5,15 @@
 	padding: 0px;
 	font-family: 'Inter', sans-serif !important;
 }
+
 :root {
 	scroll-behavior: smooth;
 	--color-white: #fff;
 	--color-black: #000;
+	--color-gray: #9a9ea7;
 	--color-primary: #4154f1;
 	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
 }
 
 html {
@@ -42,13 +45,13 @@ a:hover {
 }
 
 .dashBoard {
-	color: #0d0a19;
 	margin-left: 15px;
 }
 #main {
 	transition: all 0.3s;
 	padding: 20px 30px;
 	grid-column: 2/-1;
+	border-left: 1px solid #eeeeee !important;
 }
 
 /* footer {
@@ -639,7 +642,7 @@ a:hover {
 	padding: 15px;
 	min-height: 100vh;
 	/* min-height: 1450px; */
-	border-right: 1px solid #eeeeee !important;
+	
 	background-color: var(--color-white);
 }
 
@@ -682,7 +685,6 @@ a:hover {
 	align-items: center;
 	font-size: 15px;
 	font-weight: 600;
-	color: #4154f1;
 	transition: 0.3;
 	background: #f5f6f7;
 	padding: 10px 15px;
@@ -961,6 +963,14 @@ a:hover {
 .car-info {
 	display: flex;
 	flex-wrap: nowrap;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #9A9EA7;
+
 }
 .car-info li{
 	margin-left:10px;
@@ -991,6 +1001,14 @@ a:hover {
 }
 .conform{
 	margin-left: 50px;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #7963F0;
+
 }
 
 .hr-style{
@@ -1014,11 +1032,24 @@ Right sider bar
 accordian style
 --------------------------------------------------------------*/
 .accordion-button::after {
-	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+	background-image: url("../img/accordion.png");
 	transform: scale(.7) !important;
+	font-size: 20px !important;
+	background-size: 23px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content:"";
+
   }
   .accordion-button:not(.collapsed)::after {
-	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+	background-image: url("../img/accor.png");
+	font-size: 20px !important;
+	background-size: 23px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content:"";
   }
   /*--------------------------------------------------------------
 # profile 
@@ -1734,11 +1765,10 @@ profile header image
 /* footer  area  */
 
 .FooterArea {
-	background-color: #f5f6f7;
-	padding: 10px 30px;
-	/* margin-left: -51px;
-	width: 1100px; */
-	width: 100% !important;
+    background-color: #f5f6f7;
+    padding: 10px 30px;
+    width: 110% !important;
+    margin-left: -30px;
 }
 
 .About {
@@ -1797,3 +1827,334 @@ profile header image
 	margin-top: 10px;
 }
 
+
+/* sidebar footer area sell  start*/
+.sell-car-box {
+	padding: 2rem 2.8rem;
+	background: #f5f6f7;
+	/* border-radius: 10px; */
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left:2rem ;
+	margin-right: 2rem;
+	text-align: center;
+}
+.sell-car-box .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: #4154f1;
+}
+
+
+.btn-sell-car {
+	gap: 1rem;
+	font-size: 1.2rem;
+	background: #ffffff !important;
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+	padding: 1rem 0 !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.historySidebar {
+	margin-bottom: -410%;
+}
+
+/* sidebar footer area sell  end*/
+
+.FindVehicle {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+/* identical to box height, or 129% */
+
+letter-spacing: -0.1px;
+
+/* #0D0A19 / Primary */
+
+color: #0D0A19;
+}
+
+
+/* search area design  */
+
+.auction-calendar-page .sidebar {
+	height: 135%;
+}
+
+.Profile {
+	margin-left: 1rem !important;
+}
+
+.calendar {
+	border-radius: 1.4rem;
+}
+.calendar-header {
+	padding: 2.8rem 2.3rem;
+}
+.calendar-header-left {
+	gap: 2rem;
+}
+
+.calendar .btn-swith-months {
+	background-color: #f5f6f7;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 1rem;
+	padding: 0;
+}
+.calendar .month-name {
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.7rem;
+	color: #0d0a19;
+}
+.calendar-header-right {
+	gap: 0.5rem;
+}
+.calendar .btn {
+	background: #f5f6f7;
+	border-radius: 1rem;
+}
+.calendar .btn-switch-calendar {
+	gap: 0.8rem;
+}
+
+/* calendar item */
+.calendar .btn-list {
+	background-color: transparent !important;
+}
+.PinkColor {
+	background: #7963F0;
+border-radius: 10px;
+color: #fff;
+padding: 7px 17px !important;
+
+}
+.PinkColor:hover {
+	background: #7963F0;
+border-radius: 10px ;
+padding: 7px 17px !important;
+color: #fff;
+}
+
+.auction-calendar-page table .btn,
+.auction2 table .btn,
+.pagination-btn .btn {
+	background-color: transparent;
+	padding: 0;
+	margin-right: 1rem;
+}
+.calendar .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.arrow-btns {
+	margin-right: 1rem;
+}
+
+.arrow-btns .btn {
+	padding: 0;
+}
+.calendar-item {
+	gap: 2rem;
+}
+
+.btn-dots {
+	padding: 1rem !important;
+	margin-left: 1rem;
+	background: #f5f6f7 !important;
+}
+
+.calendar-title {
+	color: #0d0a19;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.calendar-status {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calendar-list {
+	padding: 1rem 0;
+}
+.calendar-item {
+	padding: 1rem 0;
+	border-bottom: 1px solid #e4e6e8;
+}
+
+
+.auction2-page .calendar {
+	border: none !important;
+}
+.auction2 .form {
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+}
+.auction2 .form .btn {
+	height: 3.6rem;
+	width: 3.6rem;
+	background-color: var(--color-tirtiary);
+}
+.auction2 .form .input,
+.auction2 .form .input::placeholder {
+	color: #0d0a19;
+	text-transform: capitalize;
+	font-weight: 700;
+	outline: none;
+	border: none !important;
+}
+
+.auction2 .form .btn .icon {
+	height: 1rem;
+	fill: var(--color-white);
+}
+
+.aution2-filter .filter-btns {
+	gap: 2rem;
+}
+.aution2-filter .btn {
+	color: var(--color-gray);
+	border-radius: 0.8rem;
+}
+
+.btn {
+    padding: 1.2rem 2.4rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+.aution2-filter .btn.active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #7963f0;
+    color: var(--color-tirtiary);
+}
+
+.CarHeading {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* #0D0A19 / Primary */
+
+color: #0D0A19;
+
+}
+
+.CarSmallHeading  {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #0D0A19;
+}
+.CarMoney { 
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #0D0A19;
+}
+/* 
+pagination  */
+
+
+/* pagination */
+
+.pagination {
+	padding: 3rem 2.5rem;
+	gap: 3rem;
+}
+.pagination .btn {
+	border-radius: 0.6rem;
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+.pagination .btn.active {
+	background-color: #7963f0;
+	color: var(--color-white);
+}
+.btn-next-pagination {
+	border: 1px solid #E4E6E8 !important;
+	padding: 20px 35px!important;
+}
+.filter {
+	
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+
+letter-spacing: -0.1px;
+
+/* Greys / #9A9EA7 */
+
+color: #9A9EA7;
+
+}
+.filterBy {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+
+letter-spacing: -0.1px;
+
+/* #0D0A19 / Primary */
+
+color: #0D0A19;
+}
+
+.LabelMaking  {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #0D0A19;
+
+}
+.form-check-input:checked {
+    background-color: #A2F3D9;;
+    border-color: #A2F3D9 !important;
+}
+.LabelMaking1 {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #9A9EA7;
+
+}

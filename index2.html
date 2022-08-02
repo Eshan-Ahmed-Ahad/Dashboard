@@ -30,21 +30,21 @@
 </head>
 
 <body class="dashboard-page ">
-
   <!-- ======= sidebar ======= -->
 
   <aside id="sidebar" class="sidebar position-absolute">
     <button class="btn-close-sidebar">
       <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
     </button>
+
     <ul class="sidebar-nav" id="sidebar-nav">
       <li class="nav-item">
          <img class="mb-3 ms-3" src="assets/img/logo.png" alt="">
       </li>
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
-         <img src="assets/img/1.png" alt="">
+        <a class="nav-link collapsed" href="index.html">
+         <img src="assets/img/dash2.png" alt="">
           <span class="dashBoard">Dashboard</span>
         </a>
       </li>
@@ -53,7 +53,7 @@
       <li class="nav-heading">Auction</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" href="auction2.html">
           <i><img src="assets/img/2.png" alt=""></i><span>Auctions</span>
         </a>
      
@@ -61,7 +61,7 @@
       <!-- End Components Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed"  href="auction-calendar.html">
           <i><img src="assets/img/3.png" alt=""></i><span>Calender</span>
         </a>
       </li>
@@ -83,8 +83,8 @@
       <li class="nav-heading">Vehicle finder</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
-          <i><img src="assets/img/6.png" alt=""></i>
+        <a class="nav-link" href="history.html">
+          <i><img src="assets/img/search2.png" alt=""></i>
           <span>Search </span>
         </a>
       </li><!-- End Profile Page Nav -->
@@ -104,19 +104,28 @@
       </li><!-- End Book Service Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="help-center-2.html">
           <i><img src="assets/img/10.png" alt=""></i>
           <span>Help Center</span>
         </a>
       </li><!-- End Register Page Nav -->
     </ul>
 
+    <div class="sell-car-box historySidebar ">
+      <p class="text">A new way to buy modern and sell old cars</p>
+      <a href="#" class="btn btn-sell-car d-flex ">
+        <svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
+        <span>sell your car</span>
+      </a>
+    </div>
+
   </aside><!-- End Sidebar-->
+
 
   <main id="main" class="main">
     <div class="pagetitle d-flex">
       <div>
-        <h1>Find Vehicle</h1>
+        <h2 class="FindVehicle">Find Vehicle</h2>
       </div>
       
       <div class="d-flex ms-auto">
@@ -130,24 +139,51 @@
     </div>
     <!-- End Page Title -->
 
-    
-    <!-- search  -->
-     
-  <div class="form-group has-search">
-    <input type="text" class="form-control search-btn" placeholder="Search">
-  </div>
+			<!-- auction2-->
+			<section class="auction2 calendar">
+				<!-- calendar header for big devices -->
 
- <!-- search suggetion  -->
-  <section class="mt-5 ">
+				<div class="auction2-header flex-between mb-3 d-none d-md-flex" >
+					<form action="#" class="form w-100 py-4 px-3 d-flex">
+						<button class="btn btn-form bg-pink-100 flex-center p-0" >
+							<svg class="icon icon-search">
+								<use xlink:href="assets/img/icons.svg#icon-search"></use>
+							</svg>
+						</button>
+						<input type="text" placeholder="Infiniti" class="input w-100 px-3" />
+					</form>
+				</div>
 
-     <a href="#" class="search-suggetion">New</a>
-      <a href="#" class="search-suggetion">Used</a>
-      <a href="#" class="search-suggetion">Certified used</a>
-      <a href="#" class="search-suggetion">auction</a>
-      <a href="#" class="search-suggetion">no auction</a>
-      <a href="#" class="search-suggetion">single owner</a>
+				<div class="aution2-filter flex-between py-4 d-none d-md-flex">
+					<div class="filter-btns d-flex align-items-center">
+						<button class="btn btn-filter bg-gray-100">new</button>
+						<button class="btn btn-filter bg-gray-100 active">used</button>
+						<button class="btn btn-filter bg-gray-100">Certified Used</button>
+						<button class="btn btn-filter bg-gray-100">No Accidents</button>
+						<button class="btn btn-filter bg-gray-100">Single Owner</button>
+					</div>
 
-  </section>
+				</div>
+
+				<!-- auction header for small devices -->
+				<div class="auction2-header mb-3 d-md-none py-3 radius-8">
+					<form action="#" class="form w-100 py-4 px-3 d-flex mb-4">
+						<input type="text" placeholder="Infiniti" class="input w-100 px-3" />
+						<button class="btn btn-form bg-pink-100 flex-center p-0 radius-50">
+							<svg class="icon icon-search">
+								<use xlink:href="assets/img/icons.svg#icon-clear"></use>
+							</svg>
+						</button>
+					</form>
+
+					<div class="filter-btns d-flex align-items-center px-4 gap-1">
+						<button class="btn btn-filter bg-gray-100">price</button>
+						<button class="btn btn-filter bg-gray-100 active">model</button>
+						<button class="btn btn-filter bg-gray-100">all filter</button>
+					</div>
+				</div>
+
+      </section>        
 
     <section class="row mt-5">
         <div class="col-md-8 flex-sm-column">
@@ -160,7 +196,7 @@
             </div>
             
               <div class="carDetails col-md-8 ">
-                <h3>2013 Subaru Forester Premium Plus</h3>
+                <h3 class="CarHeading">2013 Subaru Forester Premium Plus</h3>
                   <div class="car-info">
                     <span style="color:#9A9EA7;">11 475 Miles</span>
                     <li>White</li>
@@ -172,14 +208,14 @@
                       <img src="assets/img/icon1.png" class="img-fluid" alt="">
                     </div>
                     <div>
-                      <h5>Subaru Champlin, Othoberg, HI 78276</h5>
+                      <h5 class="CarSmallHeading">Subaru Champlin, Othoberg, HI 78276</h5>
                       <span style="color:#9A9EA7;">135 Miles away</span>
                      
                     </div>
                   </div>
                   <div class="d-flex mt-3">
                     <div class="col-md-6 price-control">
-                      <h3>$21,480</h3>
+                      <h3 class="CarMoney">$21,480</h3>
                     </div>
                     <div class="col-md-6">
                       <a href="#" class="conform">Confirm availability</a>
@@ -198,7 +234,7 @@
             <img src="assets/car-image/car2.png" class="img-fluid" alt="">
           </div>
           <div class="carDetails col-md-8">
-            <h3>Used 2010 BMW X3 Sport package</h3>
+            <h3 class="CarHeading">Used 2010 BMW X3 Sport package</h3>
               <div class="car-info">
                 <span style="color:#9A9EA7;">11 475 Miles</span>
                 <li>Black</li>
@@ -210,14 +246,14 @@
                   <img src="assets/img/icon2.png" alt="">
                 </div>
                 <div>
-                  <h5>BMW Dealer Liana Extensions NY 01688-8754</h5>
+                  <h5 class="CarSmallHeading">BMW Dealer Liana Extensions NY 01688-8754</h5>
                   <span style="color:#9A9EA7;">135 Miles away</span>
                  
                 </div>
               </div>
               <div class="d-flex mt-3">
                 <div class="col-md-6 ">
-                  <h3 class="price-control">$36,800</h3>
+                  <h3 class="CarMoney">$36,800</h3>
                 </div>
                 <div class="col-md-6">
                   <a href="#" class="conform">Confirm availability</a>
@@ -233,7 +269,7 @@
             <img src="assets/car-image/car3.png" class="img-fluid" alt="">
           </div>
           <div class="carDetails col-md-8">
-            <h3>2016 Toyota BRZ</h3>
+            <h3 class="CarHeading">2016 Toyota BRZ</h3>
               <div class="car-info">
                 <span style="color:#9A9EA7;">11 475 Miles</span>
                 <li>White</li>
@@ -245,14 +281,14 @@
                   <img src="assets/img/icon3.png" alt="">
                 </div>
                 <div>
-                  <h5>Toyota Turnpike, Ilenemouth, AR 52043</h5>
+                  <h5 class="CarSmallHeading">Toyota Turnpike, Ilenemouth, AR 52043</h5>
                   <span style="color:#9A9EA7;">190 Miles away</span>
                  
                 </div>
               </div>
               <div class="d-flex mt-3">
                 <div class="col-md-6">
-                  <h3>$29,500</h3>
+                  <h3 class="CarMoney">$29,500</h3>
                 </div>
                 <div class="col-md-6">
                   <a href="#" class="conform">Confirm availability</a>
@@ -268,7 +304,7 @@
             <img src="assets/car-image/car4.png" class="img-fluid" alt="">
           </div>
           <div class="carDetails col-md-8">
-            <h3>Used 2015 Audi S3 Premium Plus</h3>
+            <h3 class="CarHeading">Used 2015 Audi S3 Premium Plus</h3>
               <div class="car-info">
                 <span style="color:#9A9EA7;">11 475 Miles</span>
                 <li>White</li>
@@ -280,14 +316,14 @@
                   <img src="assets/img/icon4.png" alt="">
                 </div>
                 <div>
-                  <h5>Audi Brookeview, AR 07730-3728</h5>
+                  <h5 class="CarSmallHeading">Audi Brookeview, AR 07730-3728</h5>
                   <span style="color:#9A9EA7;">230 Miles away</span>
                  
                 </div>
               </div>
               <div class="d-flex mt-3">
                 <div class="col-md-6">
-                  <h3>$21,400</h3>
+                  <h3 class="CarMoney">$21,400</h3>
                 </div>
                 <div class="col-md-6">
                   <a href="#" class="conform">Confirm availability</a>
@@ -304,7 +340,7 @@
             <img src="assets/car-image/car5.png" class="img-fluid" alt="">
           </div>
           <div class="carDetails col-md-8">
-            <h3>2019 Fiat 500</h3>
+            <h3 class="CarHeading">2019 Fiat 500</h3>
               <div class="car-info">
                 <span style="color:#9A9EA7;">11 475 Miles</span>
                 <li>White</li>
@@ -316,14 +352,14 @@
                   <img src="assets/img/icon5.png" alt="">
                 </div>
                 <div>
-                  <h5>Fiat Dealer, Kayleighbury, NJ 50617-6060</h5>
+                  <h5 class="CarSmallHeading">Fiat Dealer, Kayleighbury, NJ 50617-6060</h5>
                   <span style="color:#9A9EA7;">135 Miles away</span>
                  
                 </div>
               </div>
               <div class="d-flex mt-3">
                 <div class="col-md-6">
-                  <h3>$21,480</h3>
+                  <h3 class="CarMoney">$21,480</h3>
                 </div>
                 <div class="col-md-6">
                   <a href="#" class="conform">Confirm availability</a>
@@ -342,7 +378,7 @@
                   <img src="assets/img/filter.png" alt="">
                 </div>
               <div>
-                <h3 style="color:#9A9EA7;">Filter by</h3>
+                <h3 class="filter" >Filter by</h3>
               </div>
             </div>
       <!-- accordian start  -->
@@ -350,7 +386,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  <h3>Year</h3>
+                  <h3 class="filterBy">Year</h3>
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -360,7 +396,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  <h3>Model</h3>
+                  <h3 class="filterBy">Model</h3>
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -370,7 +406,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  <h3>Make</h3>
+                  <h3 class="filterBy">Make</h3>
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -380,7 +416,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                  <h3>Transmission</h3>
+                  <h3 class="filterBy">Transmission</h3>
                 </button>
               </h2>
               <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -390,7 +426,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                  <h3>Body style</h3>
+                  <h3 class="filterBy">Body style</h3>
                 </button>
               </h2>
               <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -400,7 +436,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                  <h3>Engine</h3>
+                  <h3 class="filterBy">Engine</h3>
                 </button>
               </h2>
               <div id="flush-collapseSix" class="accordion-collapse " aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
@@ -408,23 +444,23 @@
 
                   <div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                       <label class="form-check-label" for="flexCheckDefault">
-                        <h3>3.5 V-6 cyl </h3>
+                        <h3 class="LabelMaking">3.5 V-6 cyl </h3>
 
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                       <label class="form-check-label" for="flexCheckDefault">
-                        <h3 style="color: #9A9EA7;">3.7 V-6 cyl </h3>
+                        <h3 class="LabelMaking1">3.7 V-6 cyl </h3>
                       
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
                       <label class="form-check-label" for="flexCheckChecked">
-                            <h3 style="color: #9A9EA7;">4.5 V-6 cyl </h3>
+                            <h3 class="LabelMaking1">4.5 V-6 cyl </h3>
                       </label>
                     </div>
                   </div>
@@ -436,7 +472,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="true" aria-controls="flush-collapseSeven">
-                  <h3>Drive train</h3>
+                  <h3 class="filterBy">Drive train</h3>
                 </button>
               </h2>
               <div id="flush-collapseSeven" class="accordion-collapse " aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -446,15 +482,15 @@
                   <div class="d-flex  ">
                     <div class="col-md-8">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
-                          <h3>4 WD</h3>
+                          <h3 class="LabelMaking">4 WD</h3>
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
                         <label class="form-check-label" for="flexCheckDefault">
-                          <h3 style="color: #9A9EA7;">RWD</h3>
+                          <h3 class="LabelMaking1">RWD</h3>
                         </label>
                       </div>
                     </div>
@@ -509,19 +545,28 @@
           </div>
         </div>    
    </section>
+
     <!-- pagination start -->
-          <section>
-            <nav aria-label="Page navigation example">
-              <ul class="pagination  pagination-lg">
-                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-              </ul>
-            </nav>
-          </section>
+		<div class="pagination d-flex align-items-center justify-content-start">
+      <button class="btn btn-prev-pagination d-none p-0 flex-between gap-1">
+        <svg class="icon icon-arrow-left">
+          <use xlink:href="assets/img/icons.svg#icon-arrow-left"></use>
+        </svg>
+        <span>prev</span>
+      </button>
+      <div class="pagination-btns d-flex align-items-center gap-1">
+        <button class="btn btn-pagination active">1</button>
+        <button class="btn btn-pagination">2</button>
+        <button class="btn btn-pagination">3</button>
+        <button class="btn btn-pagination">4</button>
+        <button class="btn btn-pagination">5</button>
+      </div>
+      <button class="btn btn-next-pagination flex-between gap-1">
+        <span class="me-2">next</span>
+        <img src="assets/img/next.png" alt="">
+      </button>
+    </div>
+
     
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
