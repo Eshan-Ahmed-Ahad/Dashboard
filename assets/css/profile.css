@@ -42,13 +42,14 @@ a:hover {
 }
 
 .dashBoard {
-	color: #0d0a19;
+	color: #9a9ea7;
 	margin-left: 15px;
 }
 #main {
 	transition: all 0.3s;
 	padding: 20px 30px;
 	grid-column: 2/-1;
+	border-left: 1px solid #EEEEEE;
 }
 
 /* footer {
@@ -639,7 +640,6 @@ a:hover {
 	padding: 15px;
 	min-height: 100vh;
 	/* min-height: 1450px; */
-	border-right: 1px solid #eeeeee !important;
 	background-color: var(--color-white);
 }
 
@@ -682,9 +682,7 @@ a:hover {
 	align-items: center;
 	font-size: 15px;
 	font-weight: 600;
-	color: #4154f1;
 	transition: 0.3;
-	background: #f5f6f7;
 	padding: 10px 15px;
 	border-radius: 4px;
 }
@@ -945,21 +943,25 @@ banner image  section
 /*--------------------------------------------------------------
 profile header image 
 --------------------------------------------------------------*/
-.header-maricano img{
-	width: 10%;
-	
+.header-maricano img {
+    width: 11%;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 105px;
+    margin-top: 0px;
 }
 .header-maricano{
 	margin: 20px;
 	
 }
 .card-design{
-	background: #ffffff;
-	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	background: #FFFFFF;
+box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+border-radius: 6px;
 	border-radius: 6px;
 	padding: 0px 10px;
 	display: flex;
-	border: 1px solid #EEEEEE;
+
 	margin-right:22px;
 }
 /*--------------------------------------------------------------
@@ -1464,13 +1466,10 @@ profile header image
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* border-radius: 4px; */
-	/* opacity: 0.75; */
-	/* background: #7963F0;
-/*  */
+padding: 5px;
 	border-radius: 8px;
 	background-image: url('../img/header-bg-2.jpg');
-	/* mix-blend-mode: luminosity; */
+	margin-bottom: 50px;
 }
 .dashBoardImages h1 {
 	font-family: 'Inter';
@@ -1529,11 +1528,10 @@ profile header image
 /* footer  area  */
 
 .FooterArea {
-	background-color: #f5f6f7;
-	padding: 10px 30px;
-	/* margin-left: -51px;
-	width: 1100px; */
-	width: 100% !important;
+    background-color: #f5f6f7;
+    padding: 10px 30px;
+    width: 110% !important;
+    margin-left: -30px;
 }
 
 .About {
@@ -1592,3 +1590,89 @@ profile header image
 	margin-top: 10px;
 }
 
+.proSt  {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+letter-spacing: -0.1px;
+color: #0D0A19;
+ 
+}
+.ProName {
+	
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+margin-bottom: -5px;
+color: #FFFFFF;
+}
+.mail {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+letter-spacing: -0.1px;
+color: #FFFFFF;
+
+}
+
+.accountInfo {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #0D0A19;
+}
+.Accountp {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #9A9EA7;
+}
+
+/* sidebar footer area sell  start*/
+.sell-car-box {
+	padding: 2rem 2.8rem;
+	background: #f5f6f7;
+	/* border-radius: 10px; */
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left:2rem ;
+	margin-right: 2rem;
+	text-align: center;
+}
+.sell-car-box .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: #4154f1;
+}
+
+
+.btn-sell-car {
+	gap: 1rem;
+	font-size: 1.2rem;
+	background: #ffffff !important;
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+	padding: 1rem 0 !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ProfileDown {
+	margin-bottom: -112%;
+}
+/* sidebar footer area sell  end*/
