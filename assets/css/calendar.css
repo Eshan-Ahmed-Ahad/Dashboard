@@ -149,7 +149,7 @@ color: #fff;
 	font-weight: 700;
 }
 .pagination .btn.active {
-	background-color: var(--color-primary);
+	background-color: #7963F0;
 	color: var(--color-white);
 }
 
@@ -299,4 +299,14 @@ border-radius: 6px !important;
 
 .calenderSell {
 	margin-bottom: -315px !important;
+}
+.nextText {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.1px;
+color: #9A9EA7;
+
 }
