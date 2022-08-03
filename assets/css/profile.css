@@ -1676,3 +1676,57 @@ color: #9A9EA7;
 	margin-bottom: -112%;
 }
 /* sidebar footer area sell  end*/
+
+
+@media all and (max-width:767px){
+	.dashBoardImages {
+		background-position: none;
+		background-repeat: none;
+		background-size: none;
+		padding: none ;
+		border-radius: none;
+		background-image: none !important;
+		margin-bottom: none;
+	}
+	.header-maricano img {
+		width: 21%;
+		background-color: #F5F6F7;
+		border-radius: 50%;
+		height: 105px;
+		margin-top: 0px;
+		margin-left: 42%;
+	  }
+	  .ProName {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		margin-left: 40%;
+		color: #0D0A19;
+	
+	  }
+	  .mail {
+		display: none;
+	  }
+	  .pagetitle  {
+		display: none !important;
+	  }
+	
+}
+
+@media all and (max-width:640px ){
+	.ProName {
+		margin-left: 33%;
+	}
+}
+@media all and (max-width:440px ){
+	.ProName {
+		margin-left: 23%;
+	}
+}
+@media all and (max-width:333px ){
+	.ProName {
+		margin-left: 4%;
+	}
+}
