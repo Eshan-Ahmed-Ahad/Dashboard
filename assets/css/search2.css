@@ -2114,6 +2114,7 @@ color: #0D0A19;
 	justify-content: center;
 	align-items: center;
 	font-weight: 700;
+	font-size: 14px;
 }
 .pagination .btn.active {
 	background-color: #7963f0;
