@@ -10,7 +10,7 @@
 
 .login-page {
 	padding: 3rem;
-	height: 90vh;
+	height: 100vh;
 	width: 100%;
 }
 
@@ -116,18 +116,17 @@
 
 /* radio button */
 .radio {
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	/* font-size: 22px; */
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
 /* Hide the browser's default radio button */
 .radio input {
 	position: absolute;
@@ -162,7 +161,7 @@
 
 /* When the radio button is checked, add a blue background */
 .radio input:checked ~ .checkmark {
-	background: #a2f3d9;
+	background: #F5F6F7;
 }
 
 .checkmark:after {
@@ -197,6 +196,8 @@
 
 /* third party log in */
 
+
+
 .signin-btns .btn {
 	border: 1px solid #eeeeee;
 	display: grid;
@@ -204,8 +205,6 @@
 	justify-content: start;
 	justify-items: start;
 }
-
-
 
 /* signup fixing start  */
 
